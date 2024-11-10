@@ -89,6 +89,102 @@ export function Content() {
             </div>
           </TrackedSection>
           <Separator className="my-6" />
+          <TrackedSection sectionId={1} sectionTitle="Dimensions">
+            <DialogElement
+              title="Dimensions"
+              subtitle="A Developer's Social Network for People Who Prefer Code Over Small Talk"
+              alt="Dimensions project Image"
+              imageUrl="/images/img2.png"
+              repoUrl="https://github.com/ujjwal-sharma221/dimensions"
+              desc1="Dimensions is a social media platform designed to bring together developers in a space that fosters collaboration, networking, and sharing knowledge. The project aims to provide a familiar yet unique environment for users to engage with each other through posts, comments, and interactions centered around the developer community."
+              desc2="The platform is tailored to developers of all skill levels, offering a space for both beginners and experienced professionals to exchange ideas and seek advice. By focusing on community-driven content, Dimensions strives to create an inclusive atmosphere where developers can build their personal network, showcase their projects, and stay updated on the latest trends in technology.."
+            />
+            <div className="ml-1 mt-2 flex flex-col items-center gap-y-2">
+              <TechnologyTabs
+                TABS={[
+                  "Next.js 14",
+                  "React Server Components",
+                  "Tailwind CSS",
+                  "React Query",
+                  "Zod",
+                  "Radix UI",
+                  "React-Hook-Form",
+                  "date-fns",
+                  "Lucia",
+                  "Neon DB",
+                ]}
+              />
+              <div className=" max-w-[700px]  text-start">
+                Dimensions is built with Next.js and TypeScript for a fast,
+                scalable frontend, styled using Tailwind CSS. The backend uses
+                Prisma ORM with a PostgreSQL database for efficient data
+                management. The app supports real-time updates via WebSockets
+                and is deployed on Vercel for scalability. It provides a smooth
+                user experience with server-side rendering and static site
+                generation.
+              </div>
+              <div className="flex">
+                <Button asChild variant="linkHover1">
+                  <Link
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href="https://github.com/ujjwal-sharma221/dimensions"
+                  >
+                    Github Repo <ArrowUpRightIcon className="size-4" />
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          </TrackedSection>
+          <Separator className="my-6" />
+          <TrackedSection sectionId={2} sectionTitle="Banks">
+            <DialogElement
+              title="Banks"
+              subtitle="Because Who Needs a Physical Bank When You Can Manage Everything Online… Without the Awkwardness?"
+              alt="Banking project Image"
+              imageUrl="/images/img3.png"
+              repoUrl="https://github.com/ujjwal-sharma221/banking-app"
+              desc1="The Banking App is designed to offer users an easy-to-use platform for managing their bank accounts and performing transactions. It focuses on providing core banking features, such as account management and transaction history, in a simple, accessible manner. The application ensures a smooth user experience with a clean interface and clear navigation."
+              desc2="The project emphasizes a modular approach, allowing for easy scalability and flexibility. It supports user authentication and offers a secure environment for financial operations, making it a reliable tool for managing personal finances.
+"
+            />
+            <div className="ml-1 mt-2 flex flex-col items-center gap-y-2">
+              <TechnologyTabs
+                TABS={[
+                  "Next.js 14",
+                  "React Server Components",
+                  "Tailwind CSS",
+                  "TypeScript",
+                  "PostgreSQL",
+                  "Prisma",
+                  "Docker",
+                  "TurboRepo",
+                ]}
+              />
+              <div className=" max-w-[700px]  text-start">
+                The Banking App is structured as a TurboRepo, optimizing the
+                monorepo management for multiple packages. It uses TypeScript
+                for type safety across the codebase, with Prisma interacting
+                with a PostgreSQL database for managing user accounts and
+                transactions. Docker is employed for containerizing the
+                application, ensuring consistent environments for development
+                and deployment. The app focuses on secure authentication and
+                modular architecture for scalability and ease of maintenance.
+              </div>
+              <div className="flex">
+                <Button asChild variant="linkHover1">
+                  <Link
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href="https://github.com/ujjwal-sharma221/banking-app"
+                  >
+                    Github Repo <ArrowUpRightIcon className="size-4" />
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          </TrackedSection>
+          <Separator className="my-6" />
         </article>
       </ContentContext.Provider>
     </div>
