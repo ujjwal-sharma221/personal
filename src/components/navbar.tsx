@@ -13,10 +13,10 @@ export const Navbar = () => {
   const aboutPage = pathname === "/about";
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 ">
+    <nav className="fixed top-0 left-0 w-full z-50">
       <div className="max-w-screen-2xl mx-auto flex items-center">
         <motion.div
-          className={cn(aboutPage ? "" : "text-8xl font-semibold")}
+          className={cn(aboutPage ? "" : "text-8xl font-semibold mb-2")}
           initial="initial"
           animate="animate"
           exit="exit"
